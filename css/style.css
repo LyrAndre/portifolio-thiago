@@ -1,0 +1,197 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #000000, #013d73, #0166d2, #dfdfdf);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.company-container {
+  text-align: center;
+  padding: 50px;
+  background: linear-gradient(to bottom, #000000, #013d73, #0166d2, #000000, #013d73, #0166d2, #dfdfdf, #000000);
+  border-radius: 8px;
+  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.541);
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.company-container .logo {
+  border: 5px solid #fff; /* Cor e largura da borda */
+  padding: 1px; /* Espaçamento interno dentro da borda */
+  border-radius: 50%; /* Borda circular */
+  display: inline-flex; /* Garante que a borda se ajuste ao tamanho do conteúdo */
+  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.541);
+}
+
+
+
+
+.logo img {
+  
+  width: 100%;
+  max-width: 125px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.image-row-up {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  
+}
+
+.image-row-up li {
+  margin: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.image-row-up li p {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.541);
+}
+
+.image-row-up li:hover p {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #000000;
+  padding: 10px 15px;
+}
+
+
+
+.image-row-up img {
+  width: 250px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.image-row-down {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.image-row-down li {
+  margin: 5px;
+  position: relative;
+  display: inline-block;
+}
+
+.image-row-down li p {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.541);
+}
+
+.image-row-down li:hover p {
+  background-color: rgba(19, 17, 41, 0.541);
+  color: #ffffff;
+  padding: 10px 15px;
+}
+
+
+
+.image-row-down img {
+  width: 250px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.social-links a {
+  display: inline-block;
+  padding: 15px 15px;
+  font-size: 20px;
+  background: linear-gradient(to left, #000000, #013d73, #0166d2, #dfdfdf);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.541);
+}
+
+.social-links a:hover {
+  background: linear-gradient(to right, #000000, #013d73, #0166d2, #dfdfdf);
+}
+
+/* Regras de mídia para dispositivos com largura menor que 600px (telas de celular) */
+@media (max-width: 600px) {
+  .logo {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    border: 5px solid #fff; /* Cor e largura da borda */
+    padding: 1px; /* Espaçamento interno dentro da borda */
+    border-radius: 50%; /* Borda circular */
+  }
+
+  .logo img {
+    max-width: 100%; /* Ajusta a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da altura */
+    border-radius: 50%; /* Borda circular */
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .social-links a {
+    padding: 10px 14px !important;
+    font-size: 14px !important;
+    display: block !important;
+    width: 100% !important;
+    margin-bottom: 10px !important;
+  }
+
+  .image-row-up {
+    display: block !important;
+    text-align: center !important;
+  }
+
+  .image-row-up li {
+    display: inline-block !important;
+    margin: 10px 0 !important;
+  }
+
+  .image-row-up img {
+    width: 100%; /* Ajusta o tamanho das imagens para dispositivos móveis */
+    height: auto;
+  }
+
+  .image-row-down {
+    display: block !important;
+    text-align: center !important;
+  }
+
+  .image-row-down li {
+    display: inline-block !important;
+    margin: 10px 0 !important;
+  }
+
+  .image-row-down img {
+    width: 100%; /* Ajusta o tamanho das imagens para dispositivos móveis */
+    height: auto;
+  }
+
+}
